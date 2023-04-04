@@ -47,6 +47,7 @@ fun ComposeScreen(){
                 placeholder = "placeholder",
                 isError = true,
                 errorMessage = "Error message",
+                errorContentDescription = "error_message_text",
                 keyboardOptions = KeyboardOptions(
                     keyboardType = KeyboardType.Email,
                     imeAction = ImeAction.Done

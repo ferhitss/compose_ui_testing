@@ -13,6 +13,7 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -44,6 +45,7 @@ fun ErrorMessage(
             text = message,
             color = Color.Red,
             modifier = Modifier
+                .testTag("error_message_text_tag")
                 .fillMaxWidth()
                 .background(
                     color = Color.White,
