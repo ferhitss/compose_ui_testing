@@ -2,6 +2,7 @@ package com.example.composeuitesting
 
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
+import com.example.composeuitesting.compose.ComposeFragment
 import com.example.composeuitesting.databinding.ActivityMainBinding
 
 class MainActivity : FragmentActivity() {
@@ -10,6 +11,14 @@ class MainActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val fragment = ComposeFragment.newInstance()
+
+        supportFragmentManager.beginTransaction().apply {
+            replace(binding.contentFrame.id, fragment)
+            commit()
+        }
     }
 }
