@@ -5,4 +5,20 @@
     <color name="search_opaque">#ffaa3f</color>
     <color name="selected_background">#ffaa3f</color>
     <color name="default_background">#3d3d3d</color>
+
+    <color name="text_white">#EEEEEE</color>
+    <color name="base_red_button">#981C15</color>
+    <color name="base_purple_button">#6C57A0</color>
+    <color name="base_gray_button">#2E303D</color>
+    <color name="button_text_white">#FFFFFF</color>
+    <color name="base_red_button_disabled">#4B1512</color>
+    <color name="button_text_white_disabled">#787878</color>
+
+    <color name="input_text">#FFFFFF</color>
+    <color name="input_background">#212224</color>
+    <color name="input_border_focus">#4C6F94</color>
+    <color name="input_placeholder">#7F8086</color>
+    <color name="input_border_error">#C1272D</color>
+    <color name="input_background_error">#F4F4F4</color>
+
 </resources>
